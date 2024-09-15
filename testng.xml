@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="project 2" parallel="tests">
+    <listeners>
+        <listener class-name="ge.tbc.itacademy.listeners.screenshotListener"/>
+    </listeners>
+    <test name="Swoop tests">
+        <groups>
+            <run>
+                <include name=".*Swoop.*"/>
+            </run>
+        </groups>
+
+        <classes>
+            <class name="ge.tbc.itacademy.swooptests.SwoopTests"/>
+        </classes>
+    </test>
+
+    <test name="Sauce Demo">
+        <groups>
+            <run>
+                <include name=".*Demo.*"/>
+            </run>
+        </groups>
+
+        <classes>
+            <class name="ge.tbc.itacademy.saucedemo.SauceDemoTests"/>
+        </classes>
+    </test>
+
+</suite>
